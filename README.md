@@ -1,2 +1,2 @@
 # inventarios
-pruebas
+pruebas para crear una aplicación
