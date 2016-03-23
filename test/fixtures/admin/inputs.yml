@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  cod: MyString
+  catalog: 
+  product: 
+  unit: 
+  supplier: 
+  location: MyString
+  description: MyText
+
+two:
+  cod: MyString
+  catalog: 
+  product: 
+  unit: 
+  supplier: 
+  location: MyString
+  description: MyText

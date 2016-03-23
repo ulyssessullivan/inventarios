@@ -1,0 +1,27 @@
+<h1>Listing admin_catalogs</h1>
+
+<table>
+  <tr>
+    <th>Nom</th>
+    <th>Description</th>
+    <th>Status</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @admin_catalogs.each do |admin_catalog| %>
+  <tr>
+    <td><%= admin_catalog.nom %></td>
+    <td><%= admin_catalog.description %></td>
+    <td><%= admin_catalog.status %></td>
+    <td><%= link_to 'Show', admin_catalog %></td>
+    <td><%= link_to 'Edit', edit_admin_catalog_path(admin_catalog) %></td>
+    <td><%= link_to 'Destroy', admin_catalog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Catalog', new_admin_catalog_path %>

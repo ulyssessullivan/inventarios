@@ -1,0 +1,35 @@
+<h1>Listing admin_outputs</h1>
+
+<table>
+  <tr>
+    <th>Cod</th>
+    <th>Catalog</th>
+    <th>Product</th>
+    <th>Unit</th>
+    <th>Amount</th>
+    <th>Staff</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @admin_outputs.each do |admin_output| %>
+  <tr>
+    <td><%= admin_output.cod %></td>
+    <td><%= admin_output.catalog %></td>
+    <td><%= admin_output.product %></td>
+    <td><%= admin_output.unit %></td>
+    <td><%= admin_output.amount %></td>
+    <td><%= admin_output.staff %></td>
+    <td><%= admin_output.description %></td>
+    <td><%= link_to 'Show', admin_output %></td>
+    <td><%= link_to 'Edit', edit_admin_output_path(admin_output) %></td>
+    <td><%= link_to 'Destroy', admin_output, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Output', new_admin_output_path %>

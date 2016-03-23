@@ -1,0 +1,37 @@
+<h1>Listing admin_returns</h1>
+
+<table>
+  <tr>
+    <th>Cod</th>
+    <th>Catalog</th>
+    <th>Product</th>
+    <th>Unit</th>
+    <th>Staff</th>
+    <th>State</th>
+    <th>Amount</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @admin_returns.each do |admin_return| %>
+  <tr>
+    <td><%= admin_return.cod %></td>
+    <td><%= admin_return.catalog %></td>
+    <td><%= admin_return.product %></td>
+    <td><%= admin_return.unit %></td>
+    <td><%= admin_return.staff %></td>
+    <td><%= admin_return.state %></td>
+    <td><%= admin_return.amount %></td>
+    <td><%= admin_return.description %></td>
+    <td><%= link_to 'Show', admin_return %></td>
+    <td><%= link_to 'Edit', edit_admin_return_path(admin_return) %></td>
+    <td><%= link_to 'Destroy', admin_return, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Return', new_admin_return_path %>

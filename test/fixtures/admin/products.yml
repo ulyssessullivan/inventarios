@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  catalog: 
+  unit: 
+  supplier: 
+  name: MyString
+  ref: MyString
+  manufacturer: MyString
+  location: MyString
+  price: 9.99
+  amount: 9.99
+  status: 1
+  description: MyText
+
+two:
+  catalog: 
+  unit: 
+  supplier: 
+  name: MyString
+  ref: MyString
+  manufacturer: MyString
+  location: MyString
+  price: 9.99
+  amount: 9.99
+  status: 1
+  description: MyText

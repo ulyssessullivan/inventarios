@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Cod:</b>
+  <%= @admin_output.cod %>
+</p>
+
+<p>
+  <b>Catalog:</b>
+  <%= @admin_output.catalog %>
+</p>
+
+<p>
+  <b>Product:</b>
+  <%= @admin_output.product %>
+</p>
+
+<p>
+  <b>Unit:</b>
+  <%= @admin_output.unit %>
+</p>
+
+<p>
+  <b>Amount:</b>
+  <%= @admin_output.amount %>
+</p>
+
+<p>
+  <b>Staff:</b>
+  <%= @admin_output.staff %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @admin_output.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_admin_output_path(@admin_output) %> |
+<%= link_to 'Back', admin_outputs_path %>

@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nom:</b>
+  <%= @admin_unit.nom %>
+</p>
+
+<p>
+  <b>Symbol:</b>
+  <%= @admin_unit.symbol %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @admin_unit.status %>
+</p>
+
+
+<%= link_to 'Edit', edit_admin_unit_path(@admin_unit) %> |
+<%= link_to 'Back', admin_units_path %>

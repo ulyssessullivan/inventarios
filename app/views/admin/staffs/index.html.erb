@@ -1,0 +1,27 @@
+<h1>Listing admin_staffs</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Phone</th>
+    <th>Address</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @admin_staffs.each do |admin_staff| %>
+  <tr>
+    <td><%= admin_staff.name %></td>
+    <td><%= admin_staff.phone %></td>
+    <td><%= admin_staff.address %></td>
+    <td><%= link_to 'Show', admin_staff %></td>
+    <td><%= link_to 'Edit', edit_admin_staff_path(admin_staff) %></td>
+    <td><%= link_to 'Destroy', admin_staff, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Staff', new_admin_staff_path %>

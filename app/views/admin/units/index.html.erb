@@ -1,0 +1,27 @@
+<h1>Listing admin_units</h1>
+
+<table>
+  <tr>
+    <th>Nom</th>
+    <th>Symbol</th>
+    <th>Status</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @admin_units.each do |admin_unit| %>
+  <tr>
+    <td><%= admin_unit.nom %></td>
+    <td><%= admin_unit.symbol %></td>
+    <td><%= admin_unit.status %></td>
+    <td><%= link_to 'Show', admin_unit %></td>
+    <td><%= link_to 'Edit', edit_admin_unit_path(admin_unit) %></td>
+    <td><%= link_to 'Destroy', admin_unit, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Unit', new_admin_unit_path %>

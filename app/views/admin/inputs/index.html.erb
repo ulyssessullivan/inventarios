@@ -1,0 +1,35 @@
+<h1>Listing admin_inputs</h1>
+
+<table>
+  <tr>
+    <th>Cod</th>
+    <th>Catalog</th>
+    <th>Product</th>
+    <th>Unit</th>
+    <th>Supplier</th>
+    <th>Location</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @admin_inputs.each do |admin_input| %>
+  <tr>
+    <td><%= admin_input.cod %></td>
+    <td><%= admin_input.catalog %></td>
+    <td><%= admin_input.product %></td>
+    <td><%= admin_input.unit %></td>
+    <td><%= admin_input.supplier %></td>
+    <td><%= admin_input.location %></td>
+    <td><%= admin_input.description %></td>
+    <td><%= link_to 'Show', admin_input %></td>
+    <td><%= link_to 'Edit', edit_admin_input_path(admin_input) %></td>
+    <td><%= link_to 'Destroy', admin_input, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Input', new_admin_input_path %>

@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Cod:</b>
+  <%= @admin_return.cod %>
+</p>
+
+<p>
+  <b>Catalog:</b>
+  <%= @admin_return.catalog %>
+</p>
+
+<p>
+  <b>Product:</b>
+  <%= @admin_return.product %>
+</p>
+
+<p>
+  <b>Unit:</b>
+  <%= @admin_return.unit %>
+</p>
+
+<p>
+  <b>Staff:</b>
+  <%= @admin_return.staff %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @admin_return.state %>
+</p>
+
+<p>
+  <b>Amount:</b>
+  <%= @admin_return.amount %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @admin_return.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_admin_return_path(@admin_return) %> |
+<%= link_to 'Back', admin_returns_path %>
